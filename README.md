@@ -1,4 +1,5 @@
-##微信小程序
+
+#### 微信小程序 
 -----
 
 **小程序页面代码构成**
@@ -8,9 +9,10 @@
 * wxss ---- 样式文件，秒速页面样式类似css
 >注意：为了方便开发者减少配置项，描述页面的四个文件必须具有相同的路径与文件名。
 
+#### JSON配置
 
-####JSON配置
 **app.json**
+
 app.json 是对当前小程序的**全局配置**，包括了小程序的所有页面路径、界面表现、网络超时时间、底部 tab 等。
 
 ```java
@@ -48,6 +50,7 @@ networkTimeout|Object|否|设置网络超时时间|类型：`request`、`connect
 debug|Boolean|否|设置是否开启 debug 模式
 
 **window**
+
 用于设置小程序的状态栏、导航条、标题、窗口背景色。
 
 属性|类型|默认值|描述
@@ -77,7 +80,9 @@ backgroundColor|HexColor|是||tab 的背景色
 borderStyle|String|否|black|tabbar上边框的颜色，仅支持black/white
 list|Array|是||tab 的列表
 position|String|否|bottom|可选值 bottom/top
-####JS逻辑层
+
+#### JS逻辑层
+
  通过编写`JS`脚本文件来处理交互逻辑。
 **app.js**
 
@@ -180,7 +185,8 @@ let item = event.currentTarget.dataset.item;
 ```
 
 
-####视图层
+#### 视图层
+
 将逻辑层的数据反应成视图，同时将视图层的事件发送给逻辑层。
 **`wx:for`列表渲染**
 默认数组的当前项的下标变量名默认为index，数组当前项的变量名默认为item。
@@ -189,11 +195,13 @@ let item = event.currentTarget.dataset.item;
 * `wx:for-index`可以指定数组当前**下标**的变量名
 
 
-#####WXML页面结构
+##### WXML页面结构
+
 WXML是框架设计的一套标签语言，结合基础组件、事件系统，可以构建出页面的结构。
 
 
-#####WXSS页面样式
+##### WXSS页面样式
+
 `wxss`是样式语言，**是CSS的拓展**，对比`css`新增了两个特性：
 
 * 尺寸单位 `rpx`
