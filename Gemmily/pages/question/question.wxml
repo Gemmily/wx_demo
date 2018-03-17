@@ -1,0 +1,34 @@
+<view class='container'>
+  <view class='tag'>
+    <text class='text'>阅读</text>
+    <text class='text'>话题</text>
+    <text class='text'>...</text>
+  </view>
+  <text class='title'>{{title}}</text>
+  <text style='font-size:12px;padding-top:10px'>{{name}}--微信小程序demo</text>
+  <view class='icon'>
+    <image class='image' src='../../images/scan.png'></image>
+    <text style='font-size:12px; margin-right:15px; color:#999'> 222</text>
+    <image class='image' src='../../images/comment.png'></image>
+    <text style='font-size:12px;color:#999'> 5 </text>
+    <text class='follow'>关注</text>
+  </view>
+</view>
+<view class='invite'>
+  <view class='style' bindtap ="onShareAppMessage">
+    <image class='image' src='../../images/add.png'></image>
+    <text style='font-size:13px; color:#999'> 邀请回答 </text>
+  </view>
+  <view class='style'>
+    <image class='image' src='../../images/write.png'></image>
+    <text style='font-size:13px;color:#999'> 写回答 </text>
+  </view>
+</view>
+<view class='item' wx:for="{{array}}" for-item="item">
+  <view style='display:flex'>
+    <image class='avatar' src="{{icon}}"></image>
+    <text style='font-size:12px;margin-left:5px; color:#999'>{{name}}</text>
+  </view>
+  <text style='font-size:11px;color:#666'>{{content}}</text>
+  <text style='font-size:10px;color:#999; margin-top:5px'>{{item}}</text>
+</view>

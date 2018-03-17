@@ -1,0 +1,25 @@
+<!--components/picker/picker.wxml-->
+<view class='picker-container' hidden='{{isHidden}}'>
+  <picker-view indicator-style="height: 50px;" class='picker-view-container' value="{{value}}" bindchange="_bindChange">
+    <view class='title'>
+      <view bindtap='cancel'>取消</view>
+      <view>{{title}}</view>
+      <view bindtap='makeSure'>确定</view>
+    </view>
+    <picker-view-column>
+      <view wx:for="{{provinces}}" class='item-view'>
+        {{item}}
+      </view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{cities}}" class='item-view' style='text-align: center'>
+        {{item}}
+      </view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{areas}}" class='item-view' style='text-align: right'>
+        {{item}}
+      </view>
+    </picker-view-column>
+  </picker-view>
+</view>

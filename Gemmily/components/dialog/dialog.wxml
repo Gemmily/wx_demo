@@ -1,0 +1,14 @@
+<!--components/dialog/dialog.wxml-->
+<view wx:if="{{dialogtype == 'dialog' }}" hidden="{{hidden}}">
+  <view class='background'>
+    <view class='container'>
+      <text style='padding:10px 0 10px 0'>{{title}}</text>
+      <text style='font-size:15px;color:#333; padding:20px 0 20px 0'>{{content}}</text>
+      <view style='display:flex; flex-direction: row; width:100%'>
+        <button  plain style=" border-color: #ddd" class='button'  bindtap='cancel'>取消</button>
+        <button plain style='color:#ff5e00; border-color: #ddd' class='button' bindtap='makeSure'>确定</button>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:else hidden='{{hidden}}' class='toast'>这是个toast文本</view>

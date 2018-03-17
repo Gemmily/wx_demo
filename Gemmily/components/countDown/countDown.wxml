@@ -1,0 +1,7 @@
+<!--components/countDown/countDown.wxml-->
+<button  wx:if="{{cType == 'phone'}}" class='button' bindtap='countDown'style="color:{{cColor}}">{{title}}</button>
+
+<view wx:else style='display:flex; flex-direction:column'>
+<button class='button' bindtap='timeDown'style="color:{{cColor}}">时间倒计时</button>
+<text class='text'>{{count}}</text>
+</view>

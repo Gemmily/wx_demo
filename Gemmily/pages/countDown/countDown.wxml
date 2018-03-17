@@ -1,0 +1,6 @@
+<view class='view-container'>
+  <text style='padding:20px'>倒计时</text>
+  <countDown title='获取验证码' />
+  <input placeholder='请输入时间单位为秒' class='input' bindinput="bindKeyInput"/>
+  <countDown cType= 'time'  time = "{{time}}"/>
+</view>

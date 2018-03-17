@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5">
+  <!-- <block/> 并不是一个组件，它仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性。 -->
+  <block wx:for="{{home}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+    <view class="home-item">
+      <view class="avatar">
+        <image class="icon" src="{{item.feed_source_img}}" />
+        <text class="text">{{item.feed_source_name}}</text>
+      </view>
+      <navigator url="../question/question?title={{item.question}}&content={{item.answer_ctnt}}&icon={{item.feed_source_img}}&name={{item.feed_source_name}}">
+        <text class='title'>{{item.question}}</text>
+      </navigator>
+      <view  bindtap="bindItemTap" style='display:flex; flex-direction:column;margin-top:10px'>
+        <text style="font-size:28rpx; color:#666"> {{item.answer_ctnt}} </text>
+        <text class='memo'>{{item.good_num}} 赞同 • {{item.comment_num}} 评论 • 关注问题</text>
+      </view>
+
+    </view>
+
+  </block>
+
+</scroll-view>

@@ -1,0 +1,29 @@
+/* components/picker/picker.wxss */
+.picker-container {
+  position: fixed;
+  width: 100%;
+  height: 80%;
+  bottom: 0;
+}
+
+.picker-view-container {
+  position: fixed;
+  left: 10px;
+  bottom: 0;
+  right: 10px;
+  top: 50%
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 10px;
+  z-index: 4;
+
+}
+
+.item-view {
+  line-height: 50px;
+}

@@ -1,0 +1,7 @@
+<!--pages/dialog/dialog.wxml-->
+<dialog hidden = '{{hidden}}' dialogtype = '{{dType}}'/>
+<view class='container'>
+<text style='padding:20px'>dialog</text>
+<button  class='button' bindtap='bindDialog'> Common Dialog</button>
+<button class='button' bindtap='bindToast'> Toast </button>
+</view>

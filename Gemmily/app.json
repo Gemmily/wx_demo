@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/other/other",
+    "pages/find/find",
+    "pages/question/question",
+    "pages/answer/answer",
+    "pages/dialog/dialog",
+    "pages/picker/picker",
+    "pages/actionSheet/actionSheet",
+    "pages/countDown/countDown",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "demo",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/s_home.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "images/find.png",
+        "selectedIconPath": "images/s_find.png"
+      },
+      {
+        "pagePath": "pages/other/other",
+        "text": "其他",
+        "iconPath": "images/other.png",
+        "selectedIconPath": "images/s_other.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

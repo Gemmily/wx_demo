@@ -1,0 +1,9 @@
+<template name="actionSheet">
+  <view class='background' hidden='{{isShow}}' bindtap='hidden'>
+    <view class='container1'>
+      <block wx:for= "{{actions}}" wx:for-item="item" data-index="{{index}}" bindtap="itemClick">
+        <view class='item'>{{item}}</view>
+      </block>
+    </view>
+  </view>
+</template>

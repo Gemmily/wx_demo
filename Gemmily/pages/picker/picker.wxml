@@ -1,0 +1,6 @@
+<view class='view-container'>
+  <text style='padding:20px'>选择器</text>
+  <button class='button' bindtap='bindShowPicker'> 城市选择器</button>
+  <view class='button' style='font-size:14; color:#333'> {{target}}</view>
+</view>
+<cPicker id = "cPicker" title="城市选择" value="{{value}}" areas="{{areas}}" provinces="{{provinces}}" cities="{{cities}}" bind:bindChange="bindChange"/>

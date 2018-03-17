@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "提示框",
+  "usingComponents":{
+    "dialog":"../../components/dialog/dialog"
+  }
+}

@@ -1,0 +1,18 @@
+<view class="container">
+  <view class='user'>
+    <image class='user-icon' src='{{userInfo.avatarUrl}}'></image>
+    <view class='item-user'>
+      <text class='user-name'>{{userInfo.nickName}}</text>
+      <text class='user-edit'>查看或编辑个人主页</text>
+    </view>
+
+  </view>
+  
+  <!-- 列表渲染 -->
+  <block wx:for="{{title}}" wx:for-index="idx" wx:for-item="item" data-index="idx">
+    <navigator url = "{{item.url}}" class="item-view" bindtap='bindItemTap'>
+      <image class='icon' mode="scaleToFill" src="{{item.img}}"></image>
+      <text class='text'>{{item.name}}</text>
+    </navigator>
+  </block>
+</view>

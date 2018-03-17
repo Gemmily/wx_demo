@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "选择器",
+  "usingComponents": {
+    "cPicker": "../../components/picker/picker"
+  }
+}

@@ -1,0 +1,7 @@
+<!--pages/actionsheet/actionsheet.wxml-->
+<import src="../../components/actionSheet/actionSheet.wxml"/>
+   <template is="actionSheet" data = "{{...actionSheetData}}" bindtap="hidden"/>   
+  <view class='view-container'>
+    <text style='padding:20px'>actionSheet</text>
+    <button class='button' bindtap='bindShowAction'> actionSheet</button>
+  </view>

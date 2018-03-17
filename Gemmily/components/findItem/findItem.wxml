@@ -1,0 +1,5 @@
+<!--components/findItem/findItem.wxml-->
+<navigator url="/pages/detail/detail?id={{item.id}}" class='item'>
+  <image mode='scaleToFill' class='image' src="{{item.images[0]}}"></image>
+  <text class='text'>{{item.title}}</text>
+</navigator>

@@ -1,0 +1,13 @@
+/* pages/dialog/dialog.wxss */
+
+.button {
+  margin: 20px 10px 0 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+.container {
+  padding: 10px;
+  height: 100%;
+  width: 90%;
+}
